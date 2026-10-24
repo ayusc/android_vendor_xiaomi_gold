@@ -8,7 +8,6 @@ ifeq ($(TARGET_DEVICE),gold)
 
 $(call add-radio-file-sha1-checked,radio/dpm.img,8094766bf9d29f52c275b9667f127a752ef7836d)
 $(call add-radio-file-sha1-checked,radio/gz.img,be4e468a0044142774122a5773c0b4e0dec094e6)
-$(call add-radio-file-sha1-checked,radio/lk.img,04bd1b17901ff8d73f15338e76819d5df038dfd1)
 $(call add-radio-file-sha1-checked,radio/mcupm.img,8d099349bb1fadeb1c2f969e38e4849d9d3c932f)
 $(call add-radio-file-sha1-checked,radio/md1img.img,8f37c5156ebc0faaa09f31d4d57adaf99d0498ed)
 $(call add-radio-file-sha1-checked,radio/pi_img.img,c2ec16eb5473acd3f428e833d8dace44373c7854)
