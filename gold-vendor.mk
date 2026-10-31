@@ -2440,7 +2440,6 @@ PRODUCT_PACKAGES += \
     tee-supplicant \
     v3avpud \
     wmt_launcher \
-    wmt_loader \
     vtservice
 
 PRODUCT_BOOT_JARS += \
