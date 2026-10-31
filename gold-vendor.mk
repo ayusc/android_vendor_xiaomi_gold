@@ -1063,7 +1063,6 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libaal_key \
     libaal_sec \
-    libaedv \
     libaiselector \
     libappgamepq \
     libbwc \
@@ -1080,7 +1079,6 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libhdrvideo \
-    libladder \
     libmml \
     libmtcloader \
     libmtk_drvb \
