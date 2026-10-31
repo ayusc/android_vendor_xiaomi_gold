@@ -1121,7 +1121,6 @@ PRODUCT_PACKAGES += \
     audio.primary.mt6833 \
     audio.r_submix.mt6833 \
     awinic.audio.effect \
-    consumerir.common \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     gps.default \
