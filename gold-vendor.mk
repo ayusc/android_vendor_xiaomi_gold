@@ -967,6 +967,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/gold/proprietary/vendor/etc/security/cacerts_supl/c542733d.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/c542733d.0 \
     vendor/xiaomi/gold/proprietary/vendor/etc/security/cacerts_supl/cec771d5.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/cec771d5.0 \
     vendor/xiaomi/gold/proprietary/vendor/etc/security/cacerts_supl/f336e3d1.0:$(TARGET_COPY_OUT_VENDOR)/etc/security/cacerts_supl/f336e3d1.0 \
+    vendor/xiaomi/gold/proprietary/vendor/etc/sensors/lightSensorCali.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/lightSensorCali.json \
+    vendor/xiaomi/gold/proprietary/vendor/etc/sensors/lightSensorConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/lightSensorConfig.json \
+    vendor/xiaomi/gold/proprietary/vendor/etc/sensors/lightSensorConfigSec.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/lightSensorConfigSec.json \
+    vendor/xiaomi/gold/proprietary/vendor/etc/sensors/lightSensorConfigThd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/lightSensorConfigThd.json \
     vendor/xiaomi/gold/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/gold/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/gold/proprietary/vendor/etc/st21nfc_conf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st21nfc_conf.txt \
@@ -1133,6 +1137,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gnss-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.videotelephony-impl \
+    vendor.xiaomi.sensor.citsensorservice@1.1-impl \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.ae.stat \
@@ -2219,6 +2224,7 @@ PRODUCT_PACKAGES += \
     libspatializerparamstorage \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libssccalapi \
     libstagefright_aidl_bufferpool2-v35 \
     libstagefright_bufferpool@2.0.1-v35 \
     libstagefright_bufferqueue_helper-v35 \
@@ -2354,6 +2360,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
     vendor.mediatek.hardware.videotelephony-V1-ndk_vendor \
+    vendor.xiaomi.sensor.citsensorservice@1.1 \
     vpp_hdrmeta_handler_plugin \
     libcomutils \
     libimsma \

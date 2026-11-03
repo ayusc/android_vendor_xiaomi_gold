@@ -3785,6 +3785,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.sensor.citsensorservice@1.1-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libhardware",
+                "libbase",
+                "libssccalapi",
+                "vendor.xiaomi.sensor.citsensorservice@1.1",
+                "android.frameworks.sensorservice@1.0",
+                "libdrm",
+                "libjsoncpp",
+                "libbinder",
+                "libui",
+                "libmisight",
+                "libcomposer_ext",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "lib3a.ae.core",
     owner: "xiaomi",
     strip: {
@@ -32796,6 +32837,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libssccalapi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libssccalapi.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libhfmanagerwrapper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libstagefright_aidl_bufferpool2-v35",
     owner: "xiaomi",
     strip: {
@@ -37163,6 +37232,34 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.sensor.citsensorservice@1.1",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
