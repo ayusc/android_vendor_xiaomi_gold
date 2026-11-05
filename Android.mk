@@ -16,5 +16,6 @@ $(call add-radio-file-sha1-checked,radio/spmfw.img,bba14bea3c7190aed7234af4fdae3
 $(call add-radio-file-sha1-checked,radio/sspm.img,aa27ffc4a59ca6d2c97663bdf5245fb7e57586fe)
 $(call add-radio-file-sha1-checked,radio/tee.img,8c9cd5c81213e2692f8966836697e4131a18a5d6)
 $(call add-radio-file-sha1-checked,radio/preloader_raw.img,40e3c4d31163474cb2e945ab5670e6b807677358)
+$(call add-radio-file-sha1-checked,radio/lk.img,c691bbda11e67699bb856773137b769ff07c670a)
 
 endif
