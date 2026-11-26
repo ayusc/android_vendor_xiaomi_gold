@@ -12,8 +12,8 @@ Proprietary files for building LineageOS 24.0 for the Redmi Note 13 5G (`gold`).
 Every file comes from Xiaomi's full OTA for the global model:
 
 ```
-gold_global-ota_full-OS3.0.5.0.VNQMIXM-user-15.0-df9ff3aa93.zip
-SHA-256 35c9f1d98b28538ac10c319ad4cba993cd5a632960d9111162e3efa494dae5c9
+gold_global-ota_full-OS3.0.6.0.VNQMIXM-user-15.0-bf9d8bb9ba.zip
+SHA-256 a3471d5b195378747bf3c14e8fd07d3d23ec5805324da23209dd6d2853af9860
 ```
 
 | Here | In the package |
@@ -44,9 +44,9 @@ You need `unzip`, `fsck.erofs` (erofs-utils; 1.7.1 was used) and `ota_extractor`
 git checkout $(git rev-list --max-parents=0 HEAD)
 
 mkdir -p work/img
-unzip -o gold_global-ota_full-OS3.0.5.0.VNQMIXM-user-15.0-df9ff3aa93.zip payload.bin -d work
+unzip -o gold_global-ota_full-OS3.0.6.0.VNQMIXM-user-15.0-bf9d8bb9ba.zip payload.bin -d work
 ota_extractor --payload work/payload.bin --output_dir work/img \
-  --partitions vendor,system_ext,product,dpm,gz,lk,mcupm,md1img,pi_img,preloader_raw,lk,scp,spmfw,sspm,tee
+  --partitions vendor,system_ext,product,dpm,gz,lk,mcupm,md1img,pi_img,preloader_raw,scp,spmfw,sspm,tee
 fsck.erofs --extract=work/vendor work/img/vendor.img
 fsck.erofs --extract=work/system_ext work/img/system_ext.img
 fsck.erofs --extract=work/product work/img/product.img
@@ -76,7 +76,7 @@ From the top of a LineageOS tree with the device tree checked out:
 
 ```sh
 cd device/xiaomi/gold
-./extract-files.py /path/to/gold_global-ota_full-OS3.0.5.0.VNQMIXM-user-15.0-df9ff3aa93.zip
+./extract-files.py /path/to/gold_global-ota_full-OS3.0.6.0.VNQMIXM-user-15.0-bf9d8bb9ba.zip
 cd -
 ```
 
